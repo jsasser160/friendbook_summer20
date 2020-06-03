@@ -1,0 +1,26 @@
+<h1 class="ui header">People</h1>
+
+<img class='myImg' src='https://images.unsplash.com/photo-1590992141241-fc39a84a067c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80' />
+
+<table class="ui celled table">
+  <thead>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Phone</th>
+    <th>Avatar</th>
+    <th>Email</th>
+  </tr>
+  </thead>
+  <tbody>
+    <% @people.each do |person| %>
+    <tr>
+      <td><%= person.first_name %></td>
+      <td><%= person.last_name %></td>
+      <td><%= person.phone %></td>
+      <td><%= person.avatar %></td>
+      <td><%= person.email %></td>     
+    </tr>
+  <% end %>
+  </tbody>
+</table>
